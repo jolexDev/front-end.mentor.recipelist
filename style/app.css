@@ -4,4 +4,145 @@
 
 body {
   margin: 0 auto;
+  background: hsl(30, 54%, 90%);
+  height: 1200px;
+  font-family: "Outfit";
+}
+
+/* Start Layout */
+
+.sectionBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1800px;
+}
+
+.recipeBox {
+  height: 1620px;
+  background: hsl(0, 0%, 100%);
+  width: 700px;
+  border-radius: 1rem;
+  padding: 2.1rem;
+}
+/* End Layout */
+
+.recipeHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.recipeHeader h1 {
+  align-self: flex-start;
+  font-size: 2.2rem;
+}
+
+.recipeHeader img {
+  width: 100%;
+  border-radius: 0.9rem;
+}
+
+.recipePreparation {
+  align-self: flex-start;
+  border: 1px solid black;
+  width: 100%;
+}
+
+.recipePreparation h4 {
+  margin-top: 3%;
+  margin-left: 3%;
+  font-size: 1.4rem;
+}
+
+.recipePreparation ul {
+  margin-left: 0.5%;
+}
+
+.recipePreparation ul {
+  padding-bottom: 3%;
+}
+
+.topicHead {
+  font-size: 1.5rem;
+  font-family: "Young Serif";
+}
+
+.recipeIngredients {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding-bottom: 4%;
+}
+
+.recipeInstructions {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding-bottom: 4%;
+}
+
+.recipeFooter-flex-table {
+  display: flex;
+  margin: 0;
+}
+
+.recipeFooter-flex-table ul {
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style-type: none;
+}
+
+.recipeFooter-flex-table span {
+  margin-left: 10%;
+}
+
+.recipeFooter-flex-table li {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.recipeFooter-flex-table li:nth-of-type(1) {
+  padding-top: 0;
+}
+
+.recipeFooter-flex-table li:nth-of-type(4) {
+  border: 0;
+}
+
+/* Galaxy Z Fold */
+
+@media screen and (min-width: 344px) and (max-width: 360px) {
+  .recipeBox {
+    height: 1850px;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 375px) {
+  .recipeBox {
+    height: 1800px;
+  }
+}
+/* IPhone SE */
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .recipeBox {
+    height: 1800px;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 430px) {
+  .recipeBox {
+    height: 1750px;
+  }
+}
+
+@media screen and (min-width: 430px) and (max-width: 540px) {
+  .recipeBox {
+    height: 1720px;
+  }
+}
+
+@media screen and (min-width: 541px) and (max-width: 693px) {
+  .recipeBox {
+    height: 1690px;
+  }
 }
