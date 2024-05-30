@@ -6,7 +6,6 @@
 body {
   margin: 0 auto;
   background: hsl(30, 54%, 90%);
-  height: 1910px;
   font-family: "Outfit";
 }
 
@@ -16,7 +15,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto;
+  height: 2300px;
 }
 
 .recipeBox {
