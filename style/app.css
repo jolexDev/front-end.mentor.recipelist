@@ -16,11 +16,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 1900px;
+  height: auto;
 }
 
 .recipeBox {
-  height: 1880px;
+  height: auto;
   background: hsl(0, 0%, 100%);
   width: 735px;
   border-radius: 1rem;
@@ -95,7 +95,20 @@ body {
 }
 
 .recipeFooter {
+  height: 100%;
   padding: 0 2.1rem 0 2.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.attribution {
+  align-self: center;
+  margin-top: 5%;
+}
+
+.attribution a {
+  text-decoration: none;
 }
 
 .recipeIngredients {
