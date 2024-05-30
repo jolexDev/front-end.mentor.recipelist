@@ -1,11 +1,12 @@
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0 auto;
   background: hsl(30, 54%, 90%);
-  height: 1850px;
+  height: 1910px;
   font-family: "Outfit";
 }
 
@@ -15,11 +16,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 1800px;
+  height: 1900px;
 }
 
 .recipeBox {
-  height: 1790px;
+  height: 1880px;
   background: hsl(0, 0%, 100%);
   width: 735px;
   border-radius: 1rem;
@@ -104,6 +105,13 @@ body {
 
 .recipeIngredients ul {
   padding-left: 1.4rem;
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+
+.recipeIngredients ul span {
+  font-weight: normal;
+  color: hsl(30, 10%, 34%);
 }
 
 .recipeIngredients li {
@@ -124,10 +132,13 @@ body {
 .recipeInstructions ol {
   padding-left: 1.4rem;
   font-size: 1rem;
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
 }
 
-.recipeInstructions-content span {
-  padding-right: 0.8rem;
+.recipeInstructions ol span {
+  color: hsl(30, 10%, 34%);
+  font-weight: normal;
 }
 
 .recipeFooter-flex-table {
@@ -165,40 +176,27 @@ body {
   font-weight: bold;
 }
 
-/* Galaxy Z Fold */
-
-@media screen and (min-width: 344px) and (max-width: 360px) {
+@media screen and (max-width: 720px) {
   .recipeBox {
-    height: 1850px;
+    height: 100%;
   }
 }
 
-@media screen and (min-width: 360px) and (max-width: 375px) {
-  .recipeBox {
-    height: 1800px;
+@media screen and (max-width: 519px) {
+  .sectionBox {
+    height: auto;
   }
-}
-/* IPhone SE */
-@media screen and (min-width: 375px) and (max-width: 414px) {
-  .recipeBox {
-    height: 1800px;
-  }
-}
 
-@media screen and (min-width: 414px) and (max-width: 430px) {
-  .recipeBox {
-    height: 1750px;
+  .recipeHeader {
+    padding: 0;
   }
-}
 
-@media screen and (min-width: 430px) and (max-width: 540px) {
-  .recipeBox {
-    height: 1720px;
+  .recipeHeader img {
+    border-radius: 0;
   }
-}
 
-@media screen and (min-width: 541px) and (max-width: 693px) {
-  .recipeBox {
-    height: 1690px;
+  .recipePreparation h4 {
+    padding-top: 4%;
+    padding-left: 4%;
   }
 }
