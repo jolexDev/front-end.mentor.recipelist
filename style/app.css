@@ -5,7 +5,7 @@
 body {
   margin: 0 auto;
   background: hsl(30, 54%, 90%);
-  height: 1200px;
+  height: 1850px;
   font-family: "Outfit";
 }
 
@@ -19,22 +19,22 @@ body {
 }
 
 .recipeBox {
-  height: 1620px;
+  height: 1790px;
   background: hsl(0, 0%, 100%);
-  width: 700px;
+  width: 735px;
   border-radius: 1rem;
-  padding: 2.1rem;
 }
 /* End Layout */
 
 .recipeHeader {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 2.1rem 2.1rem 0 2.1rem;
 }
 
-.recipeHeader h1 {
+.recipeHeader-content {
+  padding: 0 2.1rem 0 2.1rem;
+}
+
+.recipeHeader-content h1 {
   align-self: flex-start;
   font-size: 2.2rem;
 }
@@ -46,27 +46,55 @@ body {
 
 .recipePreparation {
   align-self: flex-start;
-  border: 1px solid black;
+  background: hsl(330, 100%, 98%);
+  border: 1px solid transparent;
+  border-radius: 0.9rem;
   width: 100%;
+  margin-top: 2rem;
 }
 
 .recipePreparation h4 {
   margin-top: 3%;
   margin-left: 3%;
   font-size: 1.4rem;
+  color: hsl(332, 51%, 32%);
 }
 
 .recipePreparation ul {
   margin-left: 0.5%;
+  color: hsl(332, 51%, 32%);
 }
 
 .recipePreparation ul {
   padding-bottom: 3%;
 }
 
+.recipePreparation li {
+  padding-left: 2%;
+}
+
+.recipePreparation li span {
+  color: hsl(30, 10%, 34%);
+  font-weight: bold;
+}
+
+.recipePreparation li span:nth-of-type(2) {
+  font-weight: normal;
+}
+
 .topicHead {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-family: "Young Serif";
+  margin-bottom: 1.5rem;
+  color: hsl(14, 45%, 36%);
+}
+
+.recipeMain-content {
+  padding: 0 2.1rem 0 2.1rem;
+}
+
+.recipeFooter {
+  padding: 0 2.1rem 0 2.1rem;
 }
 
 .recipeIngredients {
@@ -74,9 +102,32 @@ body {
   padding-bottom: 4%;
 }
 
+.recipeIngredients ul {
+  padding-left: 1.4rem;
+}
+
+.recipeIngredients li {
+  padding-left: 1.1rem;
+  font-size: 1rem;
+}
+
+.recipeInstructions li {
+  padding-left: 1rem;
+  width: 95%;
+}
+
 .recipeInstructions {
   border-bottom: 1px solid hsl(30, 18%, 87%);
   padding-bottom: 4%;
+}
+
+.recipeInstructions ol {
+  padding-left: 1.4rem;
+  font-size: 1rem;
+}
+
+.recipeInstructions-content span {
+  padding-right: 0.8rem;
 }
 
 .recipeFooter-flex-table {
@@ -107,6 +158,11 @@ body {
 
 .recipeFooter-flex-table li:nth-of-type(4) {
   border: 0;
+}
+
+.recipeFooter-flex-table ul:nth-of-type(2) li span {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
 }
 
 /* Galaxy Z Fold */
